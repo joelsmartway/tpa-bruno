@@ -2,11 +2,29 @@ opencollection: 1.0.0
 
 info:
   name: TPA - 2
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
 
 request:
   auth:
     type: bearer
     token: "{{accesToken}}"
+  variables:
+    - name: token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RsZWFkZXJAc21hcnR3YXkuZXMiLCJleHAiOjE3NzY5NDgxMjIsInJlZGlyZWN0IjoiaHR0cDovL2xvY2FsaG9zdDo1MTczL2Rhc2hib2FyZCJ9.9RyZcwo49wXC_SdvXExgLG3cX9NtQ0w-bF1Y2_0YGnw
+    - name: accesToken
+      value: ""
+    - name: back
+      value: http://localhost:8081
 bundled: false
 extensions:
   bruno:

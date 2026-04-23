@@ -1,0 +1,15 @@
+info:
+  name: Send questionnaire
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{back}}/v1/teams/{{teamId}}/users/{{userId}}/send_questionnaire"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

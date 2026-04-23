@@ -1,0 +1,7 @@
+info:
+  name: AGENT
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

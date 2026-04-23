@@ -1,0 +1,24 @@
+info:
+  name: Magic link
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{back}}/v1/send-magic-link"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"email\":\"testleader@smartway.es\",\r
+
+      \    \"language\":\"en\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

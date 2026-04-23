@@ -1,0 +1,18 @@
+info:
+  name: Results
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{back_staging}}/v1/sessions/{{sessionId}}/results"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

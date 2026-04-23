@@ -1,0 +1,140 @@
+info:
+  name: Responses
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{back}}/v1/questionnaire/responses"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"team_id\": \"{{teamId}}\",\r
+
+      \    \"responses\": {\r
+
+      \        \"high_performance-shared_purpose-q1\": \"o2\",\r
+
+      \        \"high_performance-roles_responsibilities-q1\": \"o3\",\r
+
+      \        \"high_performance-effective_communication-q1\": \"o2\",\r
+
+      \        \"high_performance-trust_cohesion-q1\": \"o3\",\r
+
+      \        \"high_performance-shared_leadership-q1\": \"o2\",\r
+
+      \        \"high_performance-conflict_management-q1\": \"o3\",\r
+
+      \        \"high_performance-results_orientation-q1\": \"o2\",\r
+
+      \        \"high_performance-adaptability_resilience-q1\": \"o3\",\r
+
+      \        \"tuckman-forming-q1\": \"o4\",\r
+
+      \        \"tuckman-performing-q4\": \"o2\",\r
+
+      \        \"lencioni-lack_of_trust-q3\": \"o2\",\r
+
+      \        \"systemic-balance-q2\": \"o2\",\r
+
+      \        \"systemic-belonging-q1\": \"o3\",\r
+
+      \        \"tuckman-performing-q5\": \"o2\",\r
+
+      \        \"lencioni-fear_of_conflict-q4\": \"o1\",\r
+
+      \        \"lencioni-lack_of_trust-q4\": \"o2\",\r
+
+      \        \"tuckman-norming-q4\": \"o2\",\r
+
+      \        \"lencioni-fear_of_conflict-q3\": \"o2\",\r
+
+      \        \"systemic-order-q1\": \"o1\",\r
+
+      \        \"lencioni-fear_of_conflict-q2\": \"o2\",\r
+
+      \        \"systemic-order-q2\": \"o2\",\r
+
+      \        \"tuckman-forming-q4\": \"o1\",\r
+
+      \        \"tuckman-storming-q5\": \"o4\",\r
+
+      \        \"tuckman-storming-q2\": \"o3\",\r
+
+      \        \"systemic-belonging-q2\": \"o3\",\r
+
+      \        \"lencioni-fear_of_conflict-q1\": \"o2\",\r
+
+      \        \"systemic-balance-q1\": \"o2\",\r
+
+      \        \"tuckman-performing-q3\": \"o2\",\r
+
+      \        \"lencioni-lack_of_trust-q2\": \"o1\",\r
+
+      \        \"lencioni-lack_of_commitment-q2\": \"o2\",\r
+
+      \        \"tuckman-norming-q1\": \"o2\",\r
+
+      \        \"tuckman-forming-q3\": \"o4\",\r
+
+      \        \"lencioni-lack_of_focus_on_results-q3\": \"o3\",\r
+
+      \        \"tuckman-forming-q5\": \"o2\",\r
+
+      \        \"tuckman-norming-q5\": \"o3\",\r
+
+      \        \"tuckman-performing-q2\": \"o2\",\r
+
+      \        \"systemic-belonging-q3\": \"o2\",\r
+
+      \        \"lencioni-lack_of_focus_on_results-q1\": \"o3\",\r
+
+      \        \"lencioni-lack_of_commitment-q3\": \"o3\",\r
+
+      \        \"tuckman-norming-q3\": \"o2\",\r
+
+      \        \"tuckman-storming-q4\": \"o4\",\r
+
+      \        \"systemic-order-q3\": \"o2\",\r
+
+      \        \"systemic-balance-q3\": \"o2\",\r
+
+      \        \"lencioni-lack_of_focus_on_results-q4\": \"o1\",\r
+
+      \        \"lencioni-lack_of_commitment-q1\": \"o2\",\r
+
+      \        \"lencioni-lack_of_focus_on_results-q2\": \"o4\",\r
+
+      \        \"lencioni-avoidance_of_responsibility-q4\": \"o2\",\r
+
+      \        \"lencioni-lack_of_commitment-q4\": \"o1\",\r
+
+      \        \"lencioni-avoidance_of_responsibility-q1\": \"o2\",\r
+
+      \        \"lencioni-avoidance_of_responsibility-q3\": \"o2\",\r
+
+      \        \"lencioni-lack_of_trust-q1\": \"o1\",\r
+
+      \        \"tuckman-norming-q2\": \"o2\",\r
+
+      \        \"tuckman-storming-q3\": \"o3\",\r
+
+      \        \"tuckman-storming-q1\": \"o3\",\r
+
+      \        \"lencioni-avoidance_of_responsibility-q2\": \"o2\",\r
+
+      \        \"tuckman-forming-q2\": \"o4\",\r
+
+      \        \"tuckman-performing-q1\": \"o2\"\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+opencollection: 1.0.0
+
+info:
+  name: TPA - 2
+
+request:
+  auth:
+    type: bearer
+    token: "{{accesToken}}"
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

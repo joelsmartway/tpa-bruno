@@ -25,6 +25,16 @@ request:
       value: ""
     - name: back
       value: http://localhost:8081
+    - name: back_staging
+      value: https://api-stg-mvp4.team-power-agent.com
+    - name: teamId
+      value: ""
+    - name: organizationId
+      value: ""
+    - name: sessionId
+      value: ""
+    - name: userId
+      value: ""
 bundled: false
 extensions:
   bruno:

@@ -17,6 +17,13 @@ http:
       }"
   auth: inherit
 
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        let data = res.getBody();
+        bru.setVar("token", data.token);
+
 settings:
   encodeUrl: true
   timeout: 0

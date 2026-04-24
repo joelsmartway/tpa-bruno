@@ -35,6 +35,11 @@ request:
       value: ""
     - name: userId
       value: ""
+  scripts:
+    - type: after-response
+      code: |-
+        let data = res.getBody();
+        bru.setEnvVar("token",data.token);
 bundled: false
 extensions:
   bruno:

@@ -23,6 +23,7 @@ runtime:
       code: |-
         let data = res.getBody();
         bru.setVar("token", data.token);
+        await bru.runRequest("AUTH/Signin");
 
 settings:
   encodeUrl: true

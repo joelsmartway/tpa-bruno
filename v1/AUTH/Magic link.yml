@@ -8,13 +8,11 @@ http:
   url: "{{back}}/v1/send-magic-link"
   body:
     type: json
-    data: "{\r
-
-      \    \"email\":\"testleader@smartway.es\",\r
-
-      \    \"language\":\"en\"\r
-
-      }"
+    data: |-
+      {
+          "email":"testscrum@smartway.es",
+          "language":"en"
+      }
   auth: inherit
 
 runtime:
@@ -23,7 +21,11 @@ runtime:
       code: |-
         let data = res.getBody();
         bru.setVar("token", data.token);
-        await bru.runRequest("AUTH/Signin");
+        try{
+          await bru.runRequest("AUTH/Signin");
+        }finally{
+          console.log("Logged");
+        }
 
 settings:
   encodeUrl: true

@@ -1,11 +1,11 @@
 info:
-  name: End session
+  name: Questionnaire end
   type: http
   seq: 4
 
 http:
-  method: GET
-  url: ""
+  method: PATCH
+  url: "{{back}}/v1/sessions/{{sessionId}}/questionnaire/end"
   auth: inherit
 
 settings:

@@ -1,11 +1,11 @@
 info:
-  name: Questionnaire end
+  name: Expire token
   type: http
-  seq: 4
+  seq: 2
 
 http:
-  method: PATCH
-  url: "{{back}}/v2/sessions/{{sessionId}}/questionnaire/end"
+  method: GET
+  url: "{{back}}/v2/helpers/token"
   auth: inherit
 
 settings:

@@ -20,9 +20,9 @@ request:
     token: "{{accesToken}}"
   variables:
     - name: token
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZmYWlyZW5Ac21hcnR3YXkuZXMiLCJleHAiOjE3Nzc0ODQzMTUsImp0aSI6IjdlYmMxYjMzLTEyZmEtNGRhMC05YTM4LTEwZDhjMTFjZjM0NCIsInJlZGlyZWN0IjoiaHR0cHM6Ly9zdGFnaW5nLnRlYW0tcG93ZXItYWdlbnQuY29tL2FwcCJ9.4chmv1Vqf0bAcsvDAweM9jum8M54Ma42fe0jWOOF560
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgxNjExMTcsImlhdCI6MTc3ODE1MzkxNywianRpIjoiMDU3YWY2MDktZTA2NC00YzU0LWE1MjUtM2ZlYjk3MTA3MzJkIiwic3ViIjoiMTFmYTA1ZTgtMjY0My01NzFkLWFjOTgtN2Q2M2ZiYTRiM2RkIn0.fOSYfqIokP1SGOq4OF_zCFTI3kzgKcaukfpGMB2BWrk
     - name: accesToken
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQHRlc3QuZXMiLCJleHAiOjE3Nzc0NjM1MjMsImp0aSI6ImMyOTE0YmNlLTE1OWYtNGM1Yi1iZGQ5LTQzMjhiOGE5ZDg4ZSIsInJlZGlyZWN0IjoiaHR0cHM6Ly9zdGFnaW5nLnRlYW0tcG93ZXItYWdlbnQuY29tL2FwcCJ9.rCVzts27DnB-bWnsjhF2pfGgpXNTVx2sjL9dizM8rvY
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgxNjExMTcsImlhdCI6MTc3ODE1MzkxNywianRpIjoiMDU3YWY2MDktZTA2NC00YzU0LWE1MjUtM2ZlYjk3MTA3MzJkIiwic3ViIjoiMTFmYTA1ZTgtMjY0My01NzFkLWFjOTgtN2Q2M2ZiYTRiM2RkIn0.fOSYfqIokP1SGOq4OF_zCFTI3kzgKcaukfpGMB2BWrk
     - name: back
       value: http://localhost:8081
     - name: back_staging

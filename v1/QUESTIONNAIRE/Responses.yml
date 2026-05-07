@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{back_staging}}/v1/questionnaire/responses"
+  url: "{{back}}/v1/questionnaire/responses"
   body:
     type: json
     data: |-

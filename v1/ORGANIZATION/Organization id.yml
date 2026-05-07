@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{back_staging}}/v1/organizations/{{organizationId}}"
+  url: "{{back}}/v1/organizations/{{organizationId}}"
   auth: inherit
 
 settings:

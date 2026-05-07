@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{back_staging}}/v2/roles"
+  url: "{{back}}/v2/roles"
   auth: inherit
 
 settings:

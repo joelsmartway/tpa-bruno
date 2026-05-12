@@ -20,13 +20,13 @@ request:
     token: "{{accesToken}}"
   variables:
     - name: token
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgxNjExMTcsImlhdCI6MTc3ODE1MzkxNywianRpIjoiMDU3YWY2MDktZTA2NC00YzU0LWE1MjUtM2ZlYjk3MTA3MzJkIiwic3ViIjoiMTFmYTA1ZTgtMjY0My01NzFkLWFjOTgtN2Q2M2ZiYTRiM2RkIn0.fOSYfqIokP1SGOq4OF_zCFTI3kzgKcaukfpGMB2BWrk
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RsZWFkZXJAc21hcnR3YXkuZXMiLCJleHAiOjE3NzgxNjY3MzYsImp0aSI6IjEwMTYwMjJkLWRmNzktNDE5Ni05M2FmLTU4NWU4NjI1NjRhZiIsInJlZGlyZWN0IjoiaHR0cDovL2xvY2FsaG9zdDo1MTczL2FwcCJ9.stPebKMD8ciboKZlhj9Hv_C8IKg5evDjk_ds2vIK354
     - name: accesToken
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgxNjExMTcsImlhdCI6MTc3ODE1MzkxNywianRpIjoiMDU3YWY2MDktZTA2NC00YzU0LWE1MjUtM2ZlYjk3MTA3MzJkIiwic3ViIjoiMTFmYTA1ZTgtMjY0My01NzFkLWFjOTgtN2Q2M2ZiYTRiM2RkIn0.fOSYfqIokP1SGOq4OF_zCFTI3kzgKcaukfpGMB2BWrk
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgxNzA1NDEsImlhdCI6MTc3ODE2MzM0MSwianRpIjoiZTQ2ODYwNjMtMTVhNy00ZmQzLWE0NTgtMDU3M2JlMTJjN2MwIiwic3ViIjoiMTFmYTA1ZTgtMjY0My01NzFkLWFjOTgtN2Q2M2ZiYTRiM2RkIn0.ZG3BbtYGeAJLKTjANYUYcFN-GorKCmdjlnpv10JF_L4
     - name: back
       value: http://localhost:8081
     - name: back_staging
-      value: https://api-stg-mvp4.team-power-agent.com
+      value: https://api-staging.team-power-agent.com
     - name: teamId
       value: 28ad661d-f41d-55c5-a5a4-bd2558ee16a4
     - name: organizationId
@@ -35,6 +35,8 @@ request:
       value: 28ad661d-f41d-55c5-a5a4-bd2558ee16a4
     - name: userId
       value: ""
+    - name: back_development
+      value: https://api-development.team-power-agent.com
   scripts:
     - type: after-response
       code: |-

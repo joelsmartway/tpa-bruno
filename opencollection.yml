@@ -20,7 +20,7 @@ request:
     token: "{{accesToken}}"
   variables:
     - name: token
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RsZWFkZXJAc21hcnR3YXkuZXMiLCJleHAiOjE3NzgxNjY3MzYsImp0aSI6IjEwMTYwMjJkLWRmNzktNDE5Ni05M2FmLTU4NWU4NjI1NjRhZiIsInJlZGlyZWN0IjoiaHR0cDovL2xvY2FsaG9zdDo1MTczL2FwcCJ9.stPebKMD8ciboKZlhj9Hv_C8IKg5evDjk_ds2vIK354
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvbGFAc21hcnR3YXkuZXMiLCJleHAiOjE3Nzk5ODU1NzQsImp0aSI6IjZjNmE3MTUyLTZmNDYtNGZlMS04ZDI4LThlYTQ3ZTFiOGRjOSIsInJlZGlyZWN0IjoiaHR0cHM6Ly90ZWFtLXBvd2VyLWFnZW50LmNvbS9hcHAifQ.5LrSMnPG-OIJXepbK6P0DuYkp9GeZbHHrFodWWdvpqM
     - name: accesToken
       value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgxNzA1NDEsImlhdCI6MTc3ODE2MzM0MSwianRpIjoiZTQ2ODYwNjMtMTVhNy00ZmQzLWE0NTgtMDU3M2JlMTJjN2MwIiwic3ViIjoiMTFmYTA1ZTgtMjY0My01NzFkLWFjOTgtN2Q2M2ZiYTRiM2RkIn0.ZG3BbtYGeAJLKTjANYUYcFN-GorKCmdjlnpv10JF_L4
     - name: back
@@ -28,15 +28,17 @@ request:
     - name: back_staging
       value: https://api-staging.team-power-agent.com
     - name: teamId
-      value: 28ad661d-f41d-55c5-a5a4-bd2558ee16a4
+      value: 191d0ba1-55c4-5b85-831d-854d01daccd5
     - name: organizationId
-      value: ""
+      value: 5e1fa91e-6832-5390-8c03-10ef4aa3630a
     - name: sessionId
-      value: 28ad661d-f41d-55c5-a5a4-bd2558ee16a4
+      value: 737d099b-5119-5792-b9a6-f057c870a70f
     - name: userId
       value: ""
     - name: back_development
       value: https://api-development.team-power-agent.com
+    - name: back_production
+      value: https://api.team-power-agent.com
   scripts:
     - type: after-response
       code: |-

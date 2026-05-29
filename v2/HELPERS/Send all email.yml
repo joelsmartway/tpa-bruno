@@ -1,0 +1,21 @@
+info:
+  name: Send all email
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{back}}/v2/helpers/mails"
+  body:
+    type: json
+    data: |-
+      {
+        "email":"omartinez@smartway.es"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,80 @@
+info:
+  name: Responses
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{back}}/v2/questionnaire/responses"
+  body:
+    type: json
+    data: |-
+      {
+          "team_id": "{{teamId}}",
+          "responses": {
+              "high_performance-shared_purpose-q1": "o2",
+              "high_performance-roles_responsibilities-q1": "o3",
+              "high_performance-effective_communication-q1": "o2",
+              "high_performance-trust_cohesion-q1": "o3",
+              "high_performance-shared_leadership-q1": "o2",
+              "high_performance-conflict_management-q1": "o3",
+              "high_performance-results_orientation-q1": "o2",
+              "high_performance-adaptability_resilience-q1": "o3",
+              "tuckman-forming-q1": "o4",
+              "tuckman-performing-q4": "o2",
+              "lencioni-lack_of_trust-q3": "o2",
+              "systemic-balance-q2": "o2",
+              "systemic-belonging-q1": "o3",
+              "tuckman-performing-q5": "o2",
+              "lencioni-fear_of_conflict-q4": "o1",
+              "lencioni-lack_of_trust-q4": "o2",
+              "tuckman-norming-q4": "o2",
+              "lencioni-fear_of_conflict-q3": "o2",
+              "systemic-order-q1": "o1",
+              "lencioni-fear_of_conflict-q2": "o2",
+              "systemic-order-q2": "o2",
+              "tuckman-forming-q4": "o1",
+              "tuckman-storming-q5": "o4",
+              "tuckman-storming-q2": "o3",
+              "systemic-belonging-q2": "o3",
+              "lencioni-fear_of_conflict-q1": "o2",
+              "systemic-balance-q1": "o2",
+              "tuckman-performing-q3": "o2",
+              "lencioni-lack_of_trust-q2": "o1",
+              "lencioni-lack_of_commitment-q2": "o2",
+              "tuckman-norming-q1": "o2",
+              "tuckman-forming-q3": "o4",
+              "lencioni-lack_of_focus_on_results-q3": "o3",
+              "tuckman-forming-q5": "o2",
+              "tuckman-norming-q5": "o3",
+              "tuckman-performing-q2": "o2",
+              "systemic-belonging-q3": "o2",
+              "lencioni-lack_of_focus_on_results-q1": "o3",
+              "lencioni-lack_of_commitment-q3": "o3",
+              "tuckman-norming-q3": "o2",
+              "tuckman-storming-q4": "o4",
+              "systemic-order-q3": "o2",
+              "systemic-balance-q3": "o2",
+              "lencioni-lack_of_focus_on_results-q4": "o1",
+              "lencioni-lack_of_commitment-q1": "o2",
+              "lencioni-lack_of_focus_on_results-q2": "o4",
+              "lencioni-avoidance_of_responsibility-q4": "o2",
+              "lencioni-lack_of_commitment-q4": "o1",
+              "lencioni-avoidance_of_responsibility-q1": "o2",
+              "lencioni-avoidance_of_responsibility-q3": "o2",
+              "lencioni-lack_of_trust-q1": "o1",
+              "tuckman-norming-q2": "o2",
+              "tuckman-storming-q3": "o3",
+              "tuckman-storming-q1": "o3",
+              "lencioni-avoidance_of_responsibility-q2": "o2",
+              "tuckman-forming-q2": "o4",
+              "tuckman-performing-q1": "o2"
+          }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

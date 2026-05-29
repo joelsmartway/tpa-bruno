@@ -1,0 +1,21 @@
+info:
+  name: Replace leader
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: "{{back}}/v2/organizations/{{organizationId}}/replace-org-leader"
+  body:
+    type: json
+    data: |-
+      {
+        "email":"org@5.replace"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "email":"test@smartway.es",
+          "email":"testuser@smartway.es",
           "language":"en"
       }
   auth: inherit

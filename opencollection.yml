@@ -20,15 +20,15 @@ request:
     token: "{{accesToken}}"
   variables:
     - name: token
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhvbGFAc21hcnR3YXkuZXMiLCJleHAiOjE3Nzk5ODU1NzQsImp0aSI6IjZjNmE3MTUyLTZmNDYtNGZlMS04ZDI4LThlYTQ3ZTFiOGRjOSIsInJlZGlyZWN0IjoiaHR0cHM6Ly90ZWFtLXBvd2VyLWFnZW50LmNvbS9hcHAifQ.5LrSMnPG-OIJXepbK6P0DuYkp9GeZbHHrFodWWdvpqM
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphZG9ybm9Ac21hcnR3YXkuZXMiLCJleHAiOjE3ODE4Njc3NjQsImp0aSI6ImM0N2M0MjU0LTU4NDUtNDE5YS1hYTUzLWFkODZiOGY5NjE2MiIsInJlZGlyZWN0IjoiaHR0cDovL2xvY2FsaG9zdDo1MTczL2FwcCJ9.rjiG5sYIpR-j4HwvoVAsEoMjtWEquQJ7RG-K4AhJWbo
     - name: accesToken
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzgxNzA1NDEsImlhdCI6MTc3ODE2MzM0MSwianRpIjoiZTQ2ODYwNjMtMTVhNy00ZmQzLWE0NTgtMDU3M2JlMTJjN2MwIiwic3ViIjoiMTFmYTA1ZTgtMjY0My01NzFkLWFjOTgtN2Q2M2ZiYTRiM2RkIn0.ZG3BbtYGeAJLKTjANYUYcFN-GorKCmdjlnpv10JF_L4
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODAzMTg4NTcsImlhdCI6MTc4MDMxMTY1NywianRpIjoiODk3YzY4NWUtMWMyOC00YjY1LWFjZWYtOWNiNWFhOWUxY2I1Iiwic3ViIjoiOGFjMjg0MzYtNDhmMi01N2QwLWFiMWMtYWZkYjQxMDRjMDAwIn0.ntJn_d3H2emJ78O4mtR8FcrjJV3hKnqCHjhU4n2yLMw
     - name: back
       value: http://localhost:8081
     - name: back_staging
       value: https://api-staging.team-power-agent.com
     - name: teamId
-      value: 191d0ba1-55c4-5b85-831d-854d01daccd5
+      value: c4c1b6e4-7a07-5e35-8e9d-c27bf43dd246
     - name: organizationId
       value: 5e1fa91e-6832-5390-8c03-10ef4aa3630a
     - name: sessionId

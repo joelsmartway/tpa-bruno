@@ -1,0 +1,37 @@
+info:
+  name: Secure Link
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{back}}/v1/send-secure-link"
+  body:
+    type: json
+    data: |-
+      {
+          "email":"testleader@smartway.es",
+          "language":"en"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        let data = res.getBody();
+        bru.setVar("token", data.token);
+        if (!data.token) {
+          console.warn("send-secure-link response has no 'token' field, Signin will fail");
+        }
+        try{
+          await bru.runRequest("v1/AUTH/Signin");
+        }finally{
+          console.log("Logged");
+        }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

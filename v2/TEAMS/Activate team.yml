@@ -1,0 +1,15 @@
+info:
+  name: Activate team
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{back}}/v2/teams/{{teamId}}/activate"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

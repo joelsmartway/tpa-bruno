@@ -1,0 +1,31 @@
+info:
+  name: Regenerate V13
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{back}}/v2/sessions/{{sessionId}}/agent_results/v13/regenerate"
+  body:
+    type: json
+    data: |-
+      {
+        "prompts": {},
+        "model": "gpt-4.1",
+        "force_steps": [
+          "diagnosis",
+          "thesis",
+          "interpretation",
+          "technical_report",
+          "qa_technical",
+          "team_report",
+          "qa_team"
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

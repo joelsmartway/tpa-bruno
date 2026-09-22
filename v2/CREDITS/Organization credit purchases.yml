@@ -1,0 +1,15 @@
+info:
+  name: Organization credit purchases
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{back}}/v2/organizations/{{organizationId}}/credit-purchases"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

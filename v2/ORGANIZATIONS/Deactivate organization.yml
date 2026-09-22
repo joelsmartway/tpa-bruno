@@ -1,0 +1,15 @@
+info:
+  name: Deactivate organization
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{back}}/v2/organizations/{{organizationId}}/deactivate"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: Update team
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{back}}/v1/teams/{{teamId}}"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "{{teamId}}",
+        "name": "Renamed team",
+        "organization_id": "{{organizationId}}"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

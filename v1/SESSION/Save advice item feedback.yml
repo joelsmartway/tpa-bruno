@@ -1,0 +1,29 @@
+info:
+  name: Save advice item feedback
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{back}}/v1/sessions/{{sessionId}}/advice_item_feedback"
+  body:
+    type: json
+    data: |-
+      {
+        "item_key": "leader_establece_limites_1",
+        "category": "Team Power Advice",
+        "advice_text": "Establecer limites claros en las reuniones de equipo",
+        "applied": true,
+        "efficacy": 4,
+        "comment": "Aplicado en la ultima retrospectiva",
+        "evaluated": true,
+        "finalized": false,
+        "phase": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

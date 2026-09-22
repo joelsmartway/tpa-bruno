@@ -1,7 +1,7 @@
 info:
   name: Team users
   type: http
-  seq: 5
+  seq: 10
 
 http:
   method: GET

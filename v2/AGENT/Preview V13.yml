@@ -1,0 +1,53 @@
+info:
+  name: Preview V13
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{back}}/v2/agent/v13/preview"
+  body:
+    type: json
+    data: |-
+      {
+        "session_id": "{{sessionId}}",
+        "tpi": 6,
+        "lencioni_state": "At Risk",
+        "most_chosen": {
+          "tuckman-forming-q1": 1,
+          "tuckman-forming-q2": 1,
+          "tuckman-forming-q3": 4,
+          "tuckman-forming-q4": 3,
+          "tuckman-forming-q5": 5,
+          "tuckman-storming-q1": 4,
+          "tuckman-storming-q2": 4,
+          "tuckman-storming-q3": 2,
+          "tuckman-storming-q4": 2,
+          "tuckman-storming-q5": 1,
+          "tuckman-norming-q1": 1,
+          "tuckman-norming-q2": 5,
+          "tuckman-norming-q3": 1,
+          "tuckman-norming-q4": 1,
+          "tuckman-norming-q5": 2,
+          "tuckman-performing-q1": 5,
+          "tuckman-performing-q2": 3,
+          "tuckman-performing-q3": 4,
+          "tuckman-performing-q4": 1,
+          "tuckman-performing-q5": 1
+        },
+        "tuckman_stage": "Norming",
+        "tuckman_level": "Active",
+        "report_preferences": {
+          "length": "standard",
+          "include_30_60_90": true,
+          "include_manager_tips": true
+        },
+        "language": "es"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

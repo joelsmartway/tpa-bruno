@@ -1,0 +1,15 @@
+info:
+  name: Remove user from team
+  type: http
+  seq: 15
+
+http:
+  method: DELETE
+  url: "{{back}}/v1/teams/{{teamId}}/users/{{userId}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

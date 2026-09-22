@@ -1,0 +1,21 @@
+info:
+  name: Remove purchase credits
+  type: http
+  seq: 12
+
+http:
+  method: DELETE
+  url: "{{back}}/v2/organizations/{{organizationId}}/credit-purchases/{{purchaseId}}/credits"
+  body:
+    type: json
+    data: |-
+      {
+        "reason": "Compra revertida"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,21 @@
+info:
+  name: Reject credit purchase
+  type: http
+  seq: 10
+
+http:
+  method: PATCH
+  url: "{{back}}/v2/organizations/{{organizationId}}/credit-purchases/{{purchaseId}}/reject"
+  body:
+    type: json
+    data: |-
+      {
+        "reason": "Transferencia no recibida"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,26 +1,22 @@
 info:
   name: Add member
   type: http
-  seq: 1
+  seq: 7
 
 http:
   method: POST
   url: "{{back}}/v2/teams/users/add"
   body:
     type: json
-    data: "{\r
-
-      \    \"team_id\": \"1d828bfb-d66f-536f-a3da-9f97cd239651\",\r
-
-      \    \"email\": \"testName@test.es\",\r
-
-      \    \"first_name\": \"test\",\r
-
-      \    \"last_name\": \"test\",\r
-
-      \    \"role\": \"team_member\"\r
-
-      }"
+    data: |-
+      {
+        "team_id": "{{teamId}}",
+        "email": "member@1.es",
+        "first_name": "Test",
+        "last_name": "Member",
+        "role": "team_member",
+        "organization_id": "{{organizationId}}"
+      }
   auth: inherit
 
 settings:

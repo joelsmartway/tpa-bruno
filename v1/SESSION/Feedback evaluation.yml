@@ -1,0 +1,30 @@
+info:
+  name: Feedback evaluation
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{back}}/v1/sessions/{{sessionId}}/feedback_evaluation"
+  body:
+    type: json
+    data: |-
+      {
+        "feedback": [
+          {
+            "category": "Team Power Advice",
+            "advice_text": "Establecer limites claros en las reuniones de equipo",
+            "applied": true,
+            "efficacy": 4,
+            "comment": "Funciono bien en las dos ultimas retrospectivas",
+            "phase": 1
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

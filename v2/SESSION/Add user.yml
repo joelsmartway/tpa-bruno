@@ -1,0 +1,26 @@
+info:
+  name: Add user
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{back}}/v2/sessions/{{sessionId}}/user/add"
+  body:
+    type: json
+    data: |-
+      {
+        "team_id": "{{teamId}}",
+        "email": "member@1.es",
+        "first_name": "Test",
+        "last_name": "Member",
+        "role": "team_member",
+        "organization_id": "{{organizationId}}"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

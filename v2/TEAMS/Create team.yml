@@ -1,0 +1,23 @@
+info:
+  name: Create team
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{back}}/v2/teams/"
+  body:
+    type: json
+    data: |-
+      {
+        "organization_id": "{{organizationId}}",
+        "name": "New team",
+        "team_leader_email": "leader@1.es"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

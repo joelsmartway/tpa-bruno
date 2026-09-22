@@ -1,0 +1,15 @@
+info:
+  name: Credit packages
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{back}}/v2/credit-packages"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

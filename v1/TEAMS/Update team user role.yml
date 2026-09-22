@@ -1,0 +1,21 @@
+info:
+  name: Update team user role
+  type: http
+  seq: 14
+
+http:
+  method: PATCH
+  url: "{{back}}/v1/teams/{{teamId}}/users/{{userId}}"
+  body:
+    type: json
+    data: |-
+      {
+        "role": "scrum_master"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

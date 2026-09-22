@@ -1,0 +1,15 @@
+info:
+  name: Results checked
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{back}}/v1/sessions/{{sessionId}}/results_checked"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

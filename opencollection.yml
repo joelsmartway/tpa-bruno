@@ -20,7 +20,7 @@ request:
     token: "{{accesToken}}"
   variables:
     - name: token
-      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphZG9ybm9Ac21hcnR3YXkuZXMiLCJleHAiOjE3ODE4Njc3NjQsImp0aSI6ImM0N2M0MjU0LTU4NDUtNDE5YS1hYTUzLWFkODZiOGY5NjE2MiIsInJlZGlyZWN0IjoiaHR0cDovL2xvY2FsaG9zdDo1MTczL2FwcCJ9.rjiG5sYIpR-j4HwvoVAsEoMjtWEquQJ7RG-K4AhJWbo
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxlYWRlckB0ZXN0LmVzIiwiZXhwIjoxNzg4NzcxNjAwLCJqdGkiOiJiNThjNzY2MS1kZmFkLTQyNDItODczZS00NzU0NzU0YmIxYWUiLCJyZWRpcmVjdCI6Imh0dHBzOi8vZGV2ZWxvcG1lbnQudGVhbS1wb3dlci1hZ2VudC5jb20vYXBwIn0.1O9BpKd8GOYrZGE80dwt20Nhk578JXSsWh7BpeuQ_2g
     - name: accesToken
       value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODAzMTg4NTcsImlhdCI6MTc4MDMxMTY1NywianRpIjoiODk3YzY4NWUtMWMyOC00YjY1LWFjZWYtOWNiNWFhOWUxY2I1Iiwic3ViIjoiOGFjMjg0MzYtNDhmMi01N2QwLWFiMWMtYWZkYjQxMDRjMDAwIn0.ntJn_d3H2emJ78O4mtR8FcrjJV3hKnqCHjhU4n2yLMw
     - name: back
@@ -28,7 +28,7 @@ request:
     - name: back_staging
       value: https://api-staging.team-power-agent.com
     - name: teamId
-      value: c4c1b6e4-7a07-5e35-8e9d-c27bf43dd246
+      value: 945918af-82ff-5fc0-ae6b-5200194e4936
     - name: organizationId
       value: 5e1fa91e-6832-5390-8c03-10ef4aa3630a
     - name: sessionId
@@ -39,6 +39,18 @@ request:
       value: https://api-development.team-power-agent.com
     - name: back_production
       value: https://api.team-power-agent.com
+    - name: jobId
+      value: ""
+    - name: creditId
+      value: ""
+    - name: purchaseId
+      value: ""
+    - name: itemKey
+      value: leader_establece_limites_1
+    - name: actionId
+      value: ""
+    - name: dynamicId
+      value: ""
   scripts:
     - type: after-response
       code: |-

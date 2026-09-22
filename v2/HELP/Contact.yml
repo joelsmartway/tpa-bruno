@@ -1,0 +1,24 @@
+info:
+  name: Contact
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{back}}/v2/help/contact"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Test User",
+        "email": "member@1.es",
+        "subject": "Duda sobre el cuestionario",
+        "message": "No puedo enviar mis respuestas desde el movil."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

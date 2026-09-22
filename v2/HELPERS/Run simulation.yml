@@ -1,0 +1,23 @@
+info:
+  name: Run simulation
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{back}}/v2/helpers/simulation/run"
+  body:
+    type: json
+    data: |-
+      {
+        "iterations": 3,
+        "seed": 42,
+        "sample_size": 4
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

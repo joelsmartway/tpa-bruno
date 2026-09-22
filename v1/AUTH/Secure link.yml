@@ -1,0 +1,34 @@
+info:
+  name: Secure link
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{back}}/v1/send-secure-link"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "leader@test.es",
+        "language": "en"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        let data = res.getBody();
+        bru.setVar("token", data.token);
+        try{
+          await bru.runRequest("v1/AUTH/Signin");
+        }finally{
+          console.log("Logged");
+        }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

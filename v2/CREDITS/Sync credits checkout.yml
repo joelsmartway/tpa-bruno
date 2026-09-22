@@ -1,0 +1,21 @@
+info:
+  name: Sync credits checkout
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{back}}/v2/organizations/{{organizationId}}/credits/checkout/sync"
+  body:
+    type: json
+    data: |-
+      {
+        "session_id": "cs_test_000000000000000000000000"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

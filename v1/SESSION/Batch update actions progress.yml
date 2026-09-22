@@ -1,0 +1,28 @@
+info:
+  name: Batch update actions progress
+  type: http
+  seq: 11
+
+http:
+  method: PUT
+  url: "{{back}}/v1/sessions/{{sessionId}}/advice/actions/batch"
+  body:
+    type: json
+    data: |-
+      [
+        {
+          "action_id": "{{actionId}}",
+          "status": "in_progress"
+        },
+        {
+          "action_id": "00000000-0000-0000-0000-000000000000",
+          "status": "completed"
+        }
+      ]
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

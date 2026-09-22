@@ -1,0 +1,21 @@
+info:
+  name: Change plan
+  type: http
+  seq: 16
+
+http:
+  method: PATCH
+  url: "{{back}}/v2/organizations/{{organizationId}}/plan"
+  body:
+    type: json
+    data: |-
+      {
+        "plan_slug": "premium"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

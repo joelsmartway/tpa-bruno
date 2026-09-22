@@ -1,20 +1,18 @@
 info:
   name: Signin
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
   url: "{{back}}/v1/signin"
   body:
     type: json
-    data: "{\r
-
-      \    \"token\": \"{{token}}\",\r
-
-      \  \"language\": \"en\"\r
-
-      }"
+    data: |-
+      {
+        "token": "{{token}}",
+        "language": "en"
+      }
   auth: inherit
 
 runtime:

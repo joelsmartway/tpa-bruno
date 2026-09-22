@@ -1,0 +1,15 @@
+info:
+  name: Evaluate V12 status
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: "{{back}}/v2/agent/v12/evaluate/status/{{jobId}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

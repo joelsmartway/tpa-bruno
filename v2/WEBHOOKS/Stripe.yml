@@ -1,0 +1,36 @@
+info:
+  name: Stripe
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{back}}/v2/webhooks/stripe"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "evt_test_00000000000000",
+        "object": "event",
+        "type": "checkout.session.completed",
+        "data": {
+          "object": {
+            "id": "cs_test_000000000000000000000000",
+            "object": "checkout.session",
+            "payment_status": "paid",
+            "status": "complete",
+            "metadata": {
+              "organization_id": "{{organizationId}}",
+              "package_id": "1",
+              "quantity": "1"
+            }
+          }
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

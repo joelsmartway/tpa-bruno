@@ -1,0 +1,15 @@
+info:
+  name: Delete advice item feedback
+  type: http
+  seq: 15
+
+http:
+  method: DELETE
+  url: "{{back}}/v1/sessions/{{sessionId}}/advice_item_feedback/{{itemKey}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

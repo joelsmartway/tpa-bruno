@@ -1,0 +1,15 @@
+info:
+  name: Autocomplete session
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{back}}/v2/helpers/sessions/{{sessionId}}/autocomplete"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

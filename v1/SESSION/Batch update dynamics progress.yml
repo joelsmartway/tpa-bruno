@@ -1,0 +1,28 @@
+info:
+  name: Batch update dynamics progress
+  type: http
+  seq: 12
+
+http:
+  method: PUT
+  url: "{{back}}/v1/sessions/{{sessionId}}/advice/dynamics/batch"
+  body:
+    type: json
+    data: |-
+      [
+        {
+          "dynamic_id": "{{dynamicId}}",
+          "status": "completed"
+        },
+        {
+          "dynamic_id": "00000000-0000-0000-0000-000000000000",
+          "status": "not_started"
+        }
+      ]
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: Results ready
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{back}}/v2/webhooks/results/ready/{{sessionId}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

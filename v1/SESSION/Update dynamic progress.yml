@@ -1,0 +1,22 @@
+info:
+  name: Update dynamic progress
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: "{{back}}/v1/sessions/{{sessionId}}/advice/dynamics"
+  body:
+    type: json
+    data: |-
+      {
+        "dynamic_id": "{{dynamicId}}",
+        "status": "completed"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

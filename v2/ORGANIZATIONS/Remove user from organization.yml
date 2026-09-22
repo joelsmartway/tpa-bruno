@@ -1,0 +1,15 @@
+info:
+  name: Remove user from organization
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{back}}/v2/organizations/{{organizationId}}/users/{{userId}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

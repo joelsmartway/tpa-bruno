@@ -1,0 +1,27 @@
+info:
+  name: Update organization
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{back}}/v2/organizations/{{organizationId}}"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Renamed organization",
+        "nif": "B12345678",
+        "languageRecordId": 1,
+        "domains": [
+          "example.es",
+          "example.com"
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

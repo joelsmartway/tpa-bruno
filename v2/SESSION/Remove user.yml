@@ -1,0 +1,15 @@
+info:
+  name: Remove user
+  type: http
+  seq: 16
+
+http:
+  method: DELETE
+  url: "{{back}}/v2/sessions/{{sessionId}}/users/{{userId}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

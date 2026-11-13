@@ -28,11 +28,11 @@ request:
     - name: back_staging
       value: https://api-staging.team-power-agent.com
     - name: teamId
-      value: 945918af-82ff-5fc0-ae6b-5200194e4936
+      value: 69c1ac90-7dcf-52cc-8d3c-1bd1ad55745d
     - name: organizationId
       value: 5e1fa91e-6832-5390-8c03-10ef4aa3630a
     - name: sessionId
-      value: 737d099b-5119-5792-b9a6-f057c870a70f
+      value: b4594db1-5476-50bb-9627-e74dfe221994
     - name: userId
       value: ""
     - name: back_development

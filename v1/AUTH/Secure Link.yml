@@ -1,7 +1,7 @@
 info:
-  name: Secure link
+  name: Secure Link
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "email": "leader@test.es",
-        "language": "en"
+          "email":"testleader@smartway.es",
+          "language":"en"
       }
   auth: inherit
 
@@ -21,6 +21,9 @@ runtime:
       code: |-
         let data = res.getBody();
         bru.setVar("token", data.token);
+        if (!data.token) {
+          console.warn("send-secure-link response has no 'token' field, Signin will fail");
+        }
         try{
           await bru.runRequest("v1/AUTH/Signin");
         }finally{
